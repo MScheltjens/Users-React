@@ -41,7 +41,7 @@ const User = () => {
             setInput(e.target.value);
             setCount(e.target.value);
           }}
-          placeholder={users.length}
+          placeholder={count}
         ></input>
         <button onClick={() => setCount(28)}>Show 28 users</button>
         <br />
