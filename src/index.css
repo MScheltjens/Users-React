@@ -1,0 +1,9 @@
+@import "https://unpkg.com/mvp.css";
+
+section aside img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
