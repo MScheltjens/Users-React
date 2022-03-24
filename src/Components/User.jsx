@@ -5,7 +5,6 @@ const User = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState(false);
-  const [input, setInput] = useState(""); // waarde die je invult
   const [count, setCount] = useState(20);
 
   useEffect(() => {
@@ -36,9 +35,8 @@ const User = () => {
           type="text"
           id="input"
           pattern="[0-9]*"
-          value={input}
+          value={count}
           onChange={(e) => {
-            setInput(e.target.value);
             setCount(e.target.value);
           }}
           placeholder={count}
